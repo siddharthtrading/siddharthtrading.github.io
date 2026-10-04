@@ -25,216 +25,182 @@
       padding: 30px 20px;
 
       background:
-        radial-gradient(circle at 50% 18%,
+        radial-gradient(
+          circle at 50% 18%,
           rgba(0, 255, 136, 0.10),
-          transparent 28%),
+          transparent 28%
+        ),
         linear-gradient(
           rgba(5, 8, 7, 0.90),
           rgba(5, 8, 7, 0.97)
         ),
         repeating-linear-gradient(
-          90deg,
+          105deg,
           transparent 0px,
-          transparent 54px,
-          rgba(0,255,136,0.025) 55px
+          transparent 95px,
+          rgba(0, 255, 136, 0.035) 97px,
+          transparent 100px
         ),
-        repeating-linear-gradient(
-          0deg,
-          transparent 0px,
-          transparent 54px,
-          rgba(0,255,136,0.025) 55px
-        ),
-        #050706;
-
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.22;
-
-      background:
-        linear-gradient(
-          115deg,
-          transparent 10%,
-          transparent 28%,
-          rgba(0,255,136,0.16) 28.3%,
-          transparent 28.7%,
-          transparent 46%,
-          rgba(0,255,136,0.11) 46.3%,
-          transparent 46.7%,
-          transparent 65%,
-          rgba(0,255,136,0.13) 65.3%,
-          transparent 65.7%
-        );
+        #050807;
     }
 
     .container {
-      position: relative;
-      z-index: 1;
-
       width: 100%;
       max-width: 460px;
       text-align: center;
+      padding: 30px 20px 28px;
 
-      padding: 30px 20px;
-
-      background: rgba(10, 13, 12, 0.58);
-      border: 1px solid rgba(255,255,255,0.07);
+      background: rgba(8, 13, 11, 0.78);
+      border: 1px solid rgba(0, 255, 136, 0.14);
       border-radius: 24px;
 
       box-shadow:
-        0 25px 70px rgba(0,0,0,0.55),
-        0 0 45px rgba(0,255,136,0.04);
-
-      backdrop-filter: blur(4px);
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        0 0 45px rgba(0, 255, 136, 0.04);
     }
 
     .profile-photo {
-      width: 130px;
-      height: 130px;
-
-      margin: 0 auto 18px;
+      width: 125px;
+      height: 125px;
+      margin: 0 auto 20px;
 
       border-radius: 50%;
       object-fit: cover;
       object-position: center;
 
-      border: 3px solid #00d875;
+      border: 3px solid #00ff88;
 
       box-shadow:
-        0 0 0 5px rgba(0,216,117,0.08),
-        0 0 30px rgba(0,216,117,0.25);
+        0 0 0 5px rgba(0, 255, 136, 0.12),
+        0 0 24px rgba(0, 255, 136, 0.35);
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 29px;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
       margin-bottom: 8px;
     }
 
-    .professional {
-      color: #00e67f;
-      font-size: 16px;
-      font-weight: 700;
+    .profession {
+      color: #00f58a;
+      font-size: 17px;
+      font-weight: 800;
       letter-spacing: 1.2px;
-      text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 9px;
     }
 
     .experience {
       display: inline-block;
+      padding: 8px 17px;
+      margin-bottom: 16px;
 
-      font-size: 14px;
-      font-weight: 600;
+      border: 1px solid rgba(0, 255, 136, 0.45);
+      border-radius: 999px;
 
-      color: #e7e7e7;
+      color: #ffffff;
+      background: rgba(0, 255, 136, 0.07);
 
-      padding: 8px 15px;
-      margin-bottom: 12px;
-
-      border: 1px solid rgba(0,230,127,0.30);
-      border-radius: 50px;
-
-      background: rgba(0,230,127,0.06);
+      font-size: 13px;
+      font-weight: 700;
     }
 
     .subtitle {
-      color: #9e9e9e;
+      color: #a8aaa9;
       font-size: 13px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
     .link {
-      position: relative;
+      width: 100%;
+      min-height: 62px;
 
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 13px;
 
-      width: 100%;
+      margin-bottom: 14px;
+      padding: 15px 20px;
 
-      padding: 17px 20px;
-      margin: 13px 0;
-
-      color: #ffffff;
       text-decoration: none;
+      color: #ffffff;
+
+      background: #151716;
+      border: 1px solid #333735;
+      border-radius: 14px;
 
       font-size: 16px;
       font-weight: 700;
 
-      background: rgba(22, 24, 23, 0.94);
-
-      border: 1px solid rgba(255,255,255,0.11);
-      border-radius: 14px;
-
       transition:
         transform 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
 
     .link:hover {
       transform: translateY(-2px);
-      border-color: rgba(0,230,127,0.55);
+      background: #1b1e1c;
+      border-color: #00d978;
+    }
 
-      box-shadow:
-        0 8px 25px rgba(0,0,0,0.35),
-        0 0 18px rgba(0,230,127,0.08);
+    .icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      display: block;
     }
 
     .telegram {
-      border-left: 4px solid #27a7e7;
+      border-left: 4px solid #229ED9;
     }
 
     .instagram {
-      border-left: 4px solid #e1306c;
+      border-left: 4px solid #E1306C;
     }
 
     .youtube {
-      border-left: 4px solid #ff0000;
+      border-left: 4px solid #FF0000;
     }
 
     .footer {
-      margin-top: 27px;
-      color: #686868;
+      margin-top: 28px;
+      color: #666c69;
       font-size: 12px;
     }
 
     @media (max-width: 520px) {
       body {
-        padding: 20px 14px;
+        padding: 18px 14px;
       }
 
       .container {
-        padding: 26px 16px;
+        padding: 27px 16px 24px;
         border-radius: 20px;
       }
 
       .profile-photo {
-        width: 115px;
-        height: 115px;
+        width: 112px;
+        height: 112px;
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 25px;
       }
 
-      .professional {
-        font-size: 14px;
-      }
-
-      .experience {
-        font-size: 13px;
+      .profession {
+        font-size: 15px;
       }
 
       .link {
-        padding: 16px 15px;
+        min-height: 60px;
         font-size: 15px;
+      }
+
+      .icon {
+        width: 26px;
+        height: 26px;
       }
     }
   </style>
@@ -252,8 +218,8 @@
 
     <h1>SIDDHARTH TRADING</h1>
 
-    <div class="professional">
-      Professional Trader
+    <div class="profession">
+      PROFESSIONAL TRADER
     </div>
 
     <div class="experience">
@@ -264,14 +230,36 @@
       Official Social Media Links
     </div>
 
+
+    <!-- TELEGRAM -->
+
     <a
       class="link telegram"
       href="https://t.me/+jJuj1PKbF9A0OTQ1"
       target="_blank"
       rel="noopener noreferrer"
     >
-      ✈️ Join Telegram
+
+      <svg
+        class="icon"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <circle cx="16" cy="16" r="16" fill="#229ED9"/>
+
+        <path
+          fill="#ffffff"
+          d="M24.6 8.3 21.7 23c-.2 1-.8 1.2-1.6.8l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2l-10.1 6.4-4.4-1.4c-1-.3-1-1 .2-1.5l17.1-6.6c.8-.3 1.5.2 1.1 1.5z"
+        />
+      </svg>
+
+      <span>Join Telegram</span>
+
     </a>
+
+
+    <!-- INSTAGRAM -->
 
     <a
       class="link instagram"
@@ -279,8 +267,71 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      📸 Follow on Instagram
+
+      <svg
+        class="icon"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+
+        <defs>
+          <radialGradient
+            id="instagramGradient"
+            cx="30%"
+            cy="107%"
+            r="150%"
+          >
+            <stop offset="0%" stop-color="#FFD600"/>
+            <stop offset="25%" stop-color="#FF7A00"/>
+            <stop offset="50%" stop-color="#FF0169"/>
+            <stop offset="75%" stop-color="#D300C5"/>
+            <stop offset="100%" stop-color="#7638FA"/>
+          </radialGradient>
+        </defs>
+
+        <rect
+          width="32"
+          height="32"
+          rx="8"
+          fill="url(#instagramGradient)"
+        />
+
+        <rect
+          x="7.5"
+          y="7.5"
+          width="17"
+          height="17"
+          rx="5"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="2.3"
+        />
+
+        <circle
+          cx="16"
+          cy="16"
+          r="4.2"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="2.3"
+        />
+
+        <circle
+          cx="22"
+          cy="10.5"
+          r="1.4"
+          fill="#ffffff"
+        />
+
+      </svg>
+
+      <span>Follow on Instagram</span>
+
     </a>
+
+
+    <!-- YOUTUBE -->
 
     <a
       class="link youtube"
@@ -288,8 +339,34 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      ▶️ Subscribe on YouTube
+
+      <svg
+        class="icon"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+
+        <rect
+          x="2"
+          y="6"
+          width="28"
+          height="20"
+          rx="6"
+          fill="#FF0000"
+        />
+
+        <path
+          d="M13 11.5L22 16L13 20.5Z"
+          fill="#ffffff"
+        />
+
+      </svg>
+
+      <span>Subscribe on YouTube</span>
+
     </a>
+
 
     <div class="footer">
       © 2026 Siddharth Trading
